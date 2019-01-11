@@ -1,0 +1,13 @@
+[Unit]
+Description=Lstm service at port 5588
+After=multi-user.target
+
+[Service]
+User=vps
+Group=vps
+Type=idle
+WorkingDirectory=/home/vps/Documents/projects/project/project-mai-2/release/deep_qa
+ExecStart=/usr/bin/python3 /home/vps/Documents/projects/project/project-mai-2/release/deep_qa/server.py
+
+[Install]
+WantedBy=multi-user.target
